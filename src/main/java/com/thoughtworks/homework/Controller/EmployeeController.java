@@ -24,5 +24,12 @@ public class EmployeeController {
         return employeeService.add(employee);
     }
 
+    @GetMapping("/search/{id}")
+    public Employee query(@PathVariable("id") Integer id){
+        return employeeService.query(id);
+    }
+
+
+
 
 }
