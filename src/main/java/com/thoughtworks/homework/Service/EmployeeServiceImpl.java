@@ -40,7 +40,7 @@ public class EmployeeServiceImpl implements EmployeeServiceApi {
             Employee oldEmployee = optional.get();
             compare(oldEmployee, newEmployee);
 
-            repository.save(newEmployee);
+            return repository.save(newEmployee);
         }
         return null;
     }
