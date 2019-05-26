@@ -29,7 +29,10 @@ public class EmployeeController {
         return employeeService.query(id);
     }
 
-
+    @PutMapping("/update")
+    public Employee update(Employee employee) {
+        return employeeService.update(employee);
+    }
 
 
 }
