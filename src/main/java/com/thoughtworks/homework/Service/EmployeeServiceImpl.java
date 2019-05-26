@@ -52,7 +52,7 @@ public class EmployeeServiceImpl implements EmployeeServiceApi {
         if (newEmployee.getAge() == null){
             newEmployee.setAge(oldEmployee.getAge());
         }
-        if (newEmployee.getGender() == null) {
+        if (newEmployee.getGender().isEmpty()) {
             newEmployee.setGender(oldEmployee.getGender());
         }
     }
