@@ -12,5 +12,7 @@ public interface EmployeeServiceApi {
 
     Employee query(Integer id);
 
-    void delete(Integer id);
+    Employee update(Employee employee);
+
+    String delete(Integer id);
 }
